@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/* cats */
+.cat {
+}
+
+.cat__header {
+  background-color: aqua;
+  height: 50px;
+}
+
+.cat__list {
+}
+
+.cat__item {
+}
+
+.cat__img {
+}
+
+.cat__item {
+}
+
+.cat__item {
+}
+
+.cat__item {
+}

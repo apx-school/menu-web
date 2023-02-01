@@ -1,0 +1,107 @@
+[
+  {
+    "id": "01ABCDEFGHIJKLMNOPQRST",
+    "name": "Pizza Margherita",
+    "price": 12.99,
+    "subtitle": "Tomato sauce, mozzarella, and basil",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "02ABCDEFGHIJKLMNOPQRST",
+    "name": "Spaghetti Bolognese",
+    "price": 14.99,
+    "subtitle": "Ground beef in tomato sauce with spaghetti",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+
+  {
+    "id": "20ABCDEFGHIJKLMNOPQRST",
+    "name": "Stir-Fried Vegetables",
+    "price": 11.99,
+    "subtitle": "Assorted vegetables with garlic and soy sauce",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "21ABCDEFGHIJKLMNOPQRST",
+    "name": "Grilled Chicken",
+    "price": 16.99,
+    "subtitle": "Marinated chicken breast with rosemary and lemon",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "22ABCDEFGHIJKLMNOPQRST",
+    "name": "Salmon with Asparagus",
+    "price": 18.99,
+    "subtitle": "Grilled salmon with roasted asparagus and hollandaise sauce",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "23ABCDEFGHIJKLMNOPQRST",
+    "name": "Beef Tacos",
+    "price": 12.99,
+    "subtitle": "Seasoned ground beef with lettuce, cheese, and salsa",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "24ABCDEFGHIJKLMNOPQRST",
+    "name": "Vegetable Stir-Fry",
+    "price": 10.99,
+    "subtitle": "Assorted vegetables with tofu and peanut sauce",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "25ABCDEFGHIJKLMNOPQRST",
+    "name": "Grilled Steak",
+    "price": 21.99,
+    "subtitle": "Choice sirloin steak with garlic butter and mashed potatoes",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
+    "categories": ["2"]
+  },
+  {
+    "id": "26ABCDEFGHIJKLMNOPQRST",
+    "name": "Coke",
+    "price": 2.99,
+    "subtitle": "Classic Coca-Cola",
+    "imgURL": "https://www.example.com/coke.jpg",
+    "categories": ["1"]
+  },
+  {
+    "id": "27ABCDEFGHIJKLMNOPQRST",
+    "name": "Lemonade",
+    "price": 3.99,
+    "subtitle": "Freshly squeezed lemonade with mint",
+    "imgURL": "https://www.example.com/lemonade.jpg",
+    "categories": ["1"]
+  },
+  {
+    "id": "28ABCDEFGHIJKLMNOPQRST",
+    "name": "Iced Tea",
+    "price": 2.99,
+    "subtitle": "Unsweetened iced tea with lemon",
+    "imgURL": "https://www.example.com/iced-tea.jpg",
+    "categories": ["1"]
+  },
+  {
+    "id": "29ABCDEFGHIJKLMNOPQRST",
+    "name": "Espresso",
+    "price": 3.99,
+    "subtitle": "Single shot of espresso",
+    "imgURL": "https://www.example.com/espresso.jpg",
+    "categories": ["1"]
+  },
+  {
+    "id": "30ABCDEFGHIJKLMNOPQRST",
+    "name": "Smoothie",
+    "price": 5.99,
+    "subtitle": "Mixed fruit smoothie with yogurt",
+    "imgURL": "https://www.example.com/smoothie.jpg",
+    "categories": ["1"]
+  }
+]

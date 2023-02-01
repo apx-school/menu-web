@@ -1,0 +1,13 @@
+{
+  "name": "menu-platos",
+  "version": "1.0.0",
+  "description": "/ (todas las categorías) /${categoría} (los platos de una categoría)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
