@@ -18,7 +18,7 @@ const routes = [
 
 async function resolvePublic(req, res, next) {
   const url = req.url;
-  console.log(import.meta.url);
+  // console.log(import.meta.url);
   const filePath = path.resolve("public/", url.slice(1));
   try {
     await stat(filePath);

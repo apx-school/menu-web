@@ -3,30 +3,64 @@
 }
 body {
   margin: 0;
+  font-family: "Open Sans", sans-serif;
 }
-/* cats */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* categorías */
 .cat {
 }
 
 .cat__header {
-  background-color: aqua;
-  height: 50px;
+  height: 60px;
+  background-color: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .cat__list {
 }
 
 .cat__item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  height: 120px;
+  gap: 12px;
+}
+.cat__item:hover {
+  background-color: crimson;
+  color: white;
 }
 
 .cat__img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+.cat__item-texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 9px;
 }
 
-.cat__item {
+.cat__item-title {
+  font-size: 32px;
+  font-weight: bold;
 }
 
-.cat__item {
+.cat__item-subtitle {
 }
 
-.cat__item {
+/* lib */
+.textH1 {
+  font-size: 32px;
+  font-weight: bold;
 }
