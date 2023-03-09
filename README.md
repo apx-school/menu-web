@@ -1,6 +1,6 @@
 ## Sobre este proyecto
 
-Menu-web es un proyecto de desarrollo de software que se ha llevado a cabo en el canal de Twitch de apx [https://www.twitch.tv/apxschool]. El objetivo de este proyecto es ofrecer un template básico de una aplicación web para el menú interactivo de un restaurante.
+Menu-web es un proyecto de desarrollo de software que se ha llevado a cabo en el canal de [Twitch de apx](https://www.twitch.tv/apxschool). El objetivo de este proyecto es ofrecer un template básico de una aplicación web para el menú interactivo de un restaurante.
 
 Este proyecto se compone de tres rutas (páginas) diferentes:
 

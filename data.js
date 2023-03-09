@@ -1,5 +1,5 @@
-import products from "./products.json" assert { type: "json" };
-import categories from "./categories.json" assert { type: "json" };
+import products from "./products.js";
+import categories from "./categories.js";
 
 /**
  * Download data from the specified URL.
