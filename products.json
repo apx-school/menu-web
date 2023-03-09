@@ -69,7 +69,7 @@
     "name": "Coke",
     "price": 2.99,
     "subtitle": "Classic Coca-Cola",
-    "imgURL": "https://www.example.com/coke.jpg",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
     "categories": ["1"]
   },
   {
@@ -77,7 +77,7 @@
     "name": "Lemonade",
     "price": 3.99,
     "subtitle": "Freshly squeezed lemonade with mint",
-    "imgURL": "https://www.example.com/lemonade.jpg",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
     "categories": ["1"]
   },
   {
@@ -85,7 +85,7 @@
     "name": "Iced Tea",
     "price": 2.99,
     "subtitle": "Unsweetened iced tea with lemon",
-    "imgURL": "https://www.example.com/iced-tea.jpg",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
     "categories": ["1"]
   },
   {
@@ -93,7 +93,7 @@
     "name": "Espresso",
     "price": 3.99,
     "subtitle": "Single shot of espresso",
-    "imgURL": "https://www.example.com/espresso.jpg",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
     "categories": ["1"]
   },
   {
@@ -101,7 +101,7 @@
     "name": "Smoothie",
     "price": 5.99,
     "subtitle": "Mixed fruit smoothie with yogurt",
-    "imgURL": "https://www.example.com/smoothie.jpg",
+    "imgURL": "https://loremflickr.com/g/320/240/food",
     "categories": ["1"]
   }
 ]

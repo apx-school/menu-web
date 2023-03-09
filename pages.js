@@ -1,4 +1,8 @@
-import { getCategories } from "./data.js";
+import {
+  getCategories,
+  getCategoryAndProducts,
+  getProductById,
+} from "./data.js";
 
 export function layout(content) {
   return /*html*/ `<!DOCTYPE html>
@@ -50,10 +54,72 @@ export async function laHome() {
   `);
 }
 
-export async function categoryPage(categoryId) {
+export async function categoryPage(context) {
+  const paths = context.req.url.split("/");
+  const categoryId = paths.at(-1);
+
+  const { category, products } = await getCategoryAndProducts(categoryId);
+
   return layout(/*html*/ `
-    <div class="catpage">
-      Categoría x    
+    <div class="catprods">
+      <header class="catprods__header">
+        <nav class="catprods__nav">
+          <a href="/">&lt; Volver</a>
+        </nav>
+        <h1 class="catprods__title textH1">
+          ${category.title}
+        </h1>
+      </header>
+      <main class="catprods-body">
+        ${products
+          .map(
+            (p) => /*html*/ `
+          <a class="catprods__prod" href="/productos/${p.id}">
+            <img class="catprods__prod-img" src="${p.imgURL}" alt="" />
+            <div class="catprods__prod-texts">
+              <div class="catprods__prod-title">
+                ${p.name}
+              </div>
+              <div class="catprods__prod-subtitle">
+                ${p.subtitle}
+              </div>
+            </div>
+            <div class="catprods__prod-price">
+              $${p.price}
+            </div>
+          </a>
+        `
+          )
+          .join("")}
+      </main>
+    </div>
+  `);
+}
+
+export async function productPage(context) {
+  const paths = context.req.url.split("/");
+  const productId = paths.at(-1);
+  const productData = await getProductById(productId);
+
+  return layout(/*html*/ `
+    <div class="prod">
+      <header class="prod__header">
+        <nav class="prod__nav">
+          <a onclick="history.back()">&lt; Volver</a>
+        </nav>
+      </header>
+      <main class="prod-body">
+        <h1 class="prod__title textH1">
+          ${productData.name}
+        </h1>
+        <h2 class="prod__subtitle">
+          ${productData.name}
+        </h2>
+        <img class="prod__image" src="${productData.imgURL}"/>
+        <p class="prod__price">
+          $${productData.price}
+        </p>
+      </main>
     </div>
   `);
 }

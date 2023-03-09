@@ -1,9 +1,9 @@
 import http from "node:http";
-import { laHome, categoryPage } from "./pages.js";
+import { laHome, categoryPage, productPage } from "./pages.js";
 import { resolvePage } from "./router.js";
 import path from "node:path";
 import { stat, readFile } from "node:fs/promises";
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 const routes = [
   {
@@ -13,6 +13,10 @@ const routes = [
   {
     match: /\/categorias\/\w+/g,
     resolver: categoryPage,
+  },
+  {
+    match: /\/productos\/\w+/g,
+    resolver: productPage,
   },
 ];
 
@@ -30,7 +34,7 @@ async function resolvePublic(req, res, next) {
 }
 
 async function resolveRouter(req, res, next) {
-  const html = await resolvePage(routes, req.url);
+  const html = await resolvePage(routes, req);
   if (html) {
     res.writeHead(200, { "Content-Type": "text/html" });
     res.end(html);
@@ -47,5 +51,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, function () {
-  console.log("Running on http://locahost:" + PORT);
+  console.log("Running on http://localhost:" + PORT);
 });

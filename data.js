@@ -11,3 +11,32 @@ import categories from "./categories.json" assert { type: "json" };
 export async function getCategories() {
   return categories;
 }
+
+export async function getCategoryById(id) {
+  const allCategories = await getCategories();
+  return allCategories?.find((c) => c.id === id);
+}
+
+export async function getProducts() {
+  return products;
+}
+
+export async function getProductsByCategoryId(categoryId) {
+  const allProducts = await getProducts();
+  return allProducts.filter((p) => p.categories.includes(categoryId));
+}
+
+export async function getProductById(id) {
+  const allProducts = await getProducts();
+  return allProducts.find((p) => p.id === id);
+}
+
+export async function getCategoryAndProducts(categoryId) {
+  const category = await getCategoryById(categoryId);
+  const products = await getProductsByCategoryId(categoryId);
+
+  return {
+    category,
+    products,
+  };
+}
